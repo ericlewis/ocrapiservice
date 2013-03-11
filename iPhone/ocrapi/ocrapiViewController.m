@@ -49,7 +49,7 @@
     self.btnTestWithLocalImage.enabled = YES;
 
     // Get the result in text format
-    NSString * txt = [[NSString alloc] initWithData:data encoding:NSASCIIStringEncoding];   
+    NSString * txt = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];   
     // Show a message with the text
     UIAlertView * alrt = [[UIAlertView alloc] initWithTitle:@"Success" message:txt delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
     [alrt show];
